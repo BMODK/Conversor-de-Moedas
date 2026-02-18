@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class Principal {
     static void main() {
-        int sair = 0;
-        exibeMenu menu = new exibeMenu();
-        ConverteMoeda conversorMoeda = new ConverteMoeda();
-        Scanner leitura = new Scanner(System.in);
 
-        while (sair != 7) {
+        exibeMenu menu = new exibeMenu();
+        Scanner leitura = new Scanner(System.in);
+        int opcao = 0;
+
+        while (opcao != 7) {
             menu.exibirMenu();
-            int opcao = leitura.nextInt();
-            if (sair == 7) break;
+            opcao = leitura.nextInt();
+            if (opcao == 7) break;
 
             String moedaAlvo = "";
             String moedaBase = "";
